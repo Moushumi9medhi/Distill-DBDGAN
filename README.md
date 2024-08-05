@@ -35,6 +35,7 @@ If you want to do the inference on your own dataset, you can change the format o
  ```
 bash DISTILL_DBD.sh
  ```
+Our pretrained model can be downloaded from [here](https://dl.dropboxusercontent.com/scl/fi/e5rkqcq1zqgs84a0b2vpg/trained_model.zip?rlkey=49ffoyftac9naekdtx57obt43&st=c0aav0bn&dl=0)
 
 ## Results
 We provide results on all the three datasets: ```CUHK```, ```DUT```, and ```SZU-Blur Detection```. The results obtained from our trained models can be directly accessed from [here](https://dl.dropboxusercontent.com/scl/fi/wbb82tc5ejkg0viyw1ywy/Results.zip?rlkey=i2bjqx32d76qg2nrclpdtuc39&st=gaoe72q7&dl=0);
