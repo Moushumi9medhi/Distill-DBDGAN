@@ -18,18 +18,28 @@ We present Distill-DBDGAN, a defocus blur detection model, that segment the blur
 blur in resource-constraint devices. Its core principle is to leverage knowledge distillation by transferring information from the larger teacher network to a compact student network for mobile applicability. All the networks are adversarially trained in an end-to-end manner.
 
 ## Dataset
-We provide the sample datasets for evaluation. You can find it in the folders 'CUHK_test', DUT_test and 'SZU-BD_test'. If you want to do the inference on your own dataset, you can change the format of your dataset according to the provided dataset. The defocus blur detection masks output by our model are labeled with non-zero values for blur. However, some datasets provide ground truth blur masks where blur is marked as zero. To ensure consistency with our model's output, we need to convert the ground truth masks from these datasets to a uniform format that aligns with our model's format.
-gggggggggggggggggg strt
-ggggggggggggggggggggggggg end
+We have included the publicly available datasets [```CUHK```](http://shijianping.me/jnb/index.html), [```DUT_test```](http://ice.dlut.edu.cn/ZhaoWenda/BTBCRLNet.html), and [```SZU-BD_test```](https://github.com/mathxlsun/BD_EFPN/tree/master/SZU-BD) for evaluation. You can find them in the folders [```CUHK_test```], [```DUT_test```], and [```SZU-BD_test```], respectively. If you want to do the inference on your own dataset, you can change the format of your dataset according to the provided dataset. The defocus blur detection masks output by our model are labeled with non-zero values for blur. However, some datasets provide ground truth blur masks where blur is marked as zero. To ensure consistency with our model's output, we need to convert the ground truth masks from these datasets to a uniform format that aligns with our model's format.
+
+## Testing
+
+ To test our model, run the testing script: : ```DISTILL_DBD.sh```
+
+ ```
+bash DISTILL_DBD.sh
+ ```
 
 ## Results
-We provide results on three datasets.
+We provide results on all the three datasets: ```CUHK```, ```DUT```, and ```SZU-Blur Detection```. The results obtained from our trained models can be directly accessed from ```Results/dataset_name/```;
+
+## Contact
+
+- Moushumi Medhi: medhi.moushumi@iitkgp.ac.in
 
 ## Dedication
 This paper is for you, [Sankar](https://www.linkedin.com/in/ganeshjonna/) for being an enthusiastic contributor, a dedicated researcher, a genuine friend, and most importantly, an amazing human being. Your expertise was essential in developing the code. May you continue to shine wherever you are. Your influence will always be remembered and cherished.
 
 ## Citation
-
+If you find this repository useful, please consider citing:
 ```
 @article{10.1145/3557897,
 author = {Jonna, Sankaraganesh and Medhi, Moushumi and Sahay, Rajiv Ranjan},
@@ -49,3 +59,6 @@ articleno = {87},
 numpages = {26}
 }
 ```
+## Acknowledgement
+
+We acknowledge [Author/Organization Name] for creating and sharing the datasets.
