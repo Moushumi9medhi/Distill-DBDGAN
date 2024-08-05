@@ -17,7 +17,7 @@ Moushumi Medhi,
 We present Distill-DBDGAN, a defocus blur detection model, that segment the blurred regions from a given image affected by defocus
 blur in resource-constraint devices. Its core principle is to leverage knowledge distillation by transferring information from the larger teacher network to a compact student network for mobile applicability. All the networks are adversarially trained in an end-to-end manner.
 
-## Dataset
+## Datasets
 We have included the publicly available datasets [```CUHK```](http://shijianping.me/jnb/index.html), [```DUT```](http://ice.dlut.edu.cn/ZhaoWenda/BTBCRLNet.html), and [```SZU-Blur Detection```](https://github.com/mathxlsun/BD_EFPN/tree/master/SZU-BD) for evaluation. You can find them in the folders [```CUHK_test```], [```DUT_test```], and [```SZU-BD_test```], respectively. If you want to do the inference on your own dataset, you can change the format of your dataset according to the provided dataset. The defocus blur detection masks output by our model are labeled with non-zero values for blur. However, some datasets provide ground truth blur masks where blur is marked as zero. To ensure consistency with our model's output, we need to convert the ground truth masks from these datasets to a uniform format that aligns with our model's format.
 
 ## Testing
@@ -31,12 +31,20 @@ bash DISTILL_DBD.sh
 ## Results
 We provide results on all the three datasets: ```CUHK```, ```DUT```, and ```SZU-Blur Detection```. The results obtained from our trained models can be directly accessed from ```Results/dataset_name/```;
 <p align="center">
-  <img src="assets/figs/CUHK_fm_curves.png" width="45%" style="display: inline-block;">
-  <img src="assets/figs/CUHK_pr_curves.png" width="45%" style="display: inline-block;">
+  <img src="assets/CUHK_fm_curves.png" width="45%" style="display: inline-block;">
+  <img src="assets/CUHK_pr_curves.png" width="45%" style="display: inline-block;">
   <br>
-  Models are deployed on iPhone 12 with Core ML Tools to get latency.
 </p>
-
+<p align="center">
+  <img src="assets/DUT_fm_curves.png" width="45%" style="display: inline-block;">
+  <img src="assets/DUT_pr_curves.png" width="45%" style="display: inline-block;">
+  <br>
+</p>
+<p align="center">
+  <img src="assets/SZU-BD_fm_curves.png" width="45%" style="display: inline-block;">
+  <img src="assets/SZU-BD_pr_curves.png" width="45%" style="display: inline-block;">
+  <br>
+</p>
 
 ## Contact
 
