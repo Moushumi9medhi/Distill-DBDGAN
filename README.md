@@ -2,9 +2,10 @@
 This repository represents the official implementation of the paper titled "Distill-DBDGAN: Knowledge Distillation and Adversarial Learning Framework for Defocus Blur Detection".
 [paper](https://dl.acm.org/doi/pdf/10.1145/3557897)
 
-<!DOCTYPE html>
-<html>
-<head>
+# My Research Paper
+
+<!-- The HTML and CSS for the buttons -->
+<div>
     <style>
         .button {
             display: inline-block;
@@ -21,24 +22,18 @@ This repository represents the official implementation of the paper titled "Dist
             box-shadow: 0 4px #999;
             margin: 5px;
         }
-
         .button:hover {background-color: #3e8e41}
-
         .button:active {
             background-color: #3e8e41;
             box-shadow: 0 2px #666;
             transform: translateY(2px);
         }
     </style>
-</head>
-<body>
 
-<a href="https://arxiv.org" class="button">ARXIV</a>
-<a href="https://example.com/pdf" class="button">PDF</a>
-<a href="https://opensource.org/licenses/MIT" class="button">License: MIT</a>
-
-</body>
-</html>
+    <a href="https://arxiv.org" class="button">ARXIV</a>
+    <a href="https://example.com/pdf" class="button">PDF</a>
+    <a href="https://opensource.org/licenses/MIT" class="button">License: MIT</a>
+</div>
 
 
 ### Results
