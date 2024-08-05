@@ -30,6 +30,13 @@ bash DISTILL_DBD.sh
 
 ## Results
 We provide results on all the three datasets: ```CUHK```, ```DUT```, and ```SZU-Blur Detection```. The results obtained from our trained models can be directly accessed from ```Results/dataset_name/```;
+<p align="center">
+  <img src="assets/figs/CUHK_fm_curves.png" width="45%" style="display: inline-block;">
+  <img src="assets/figs/CUHK_pr_curves.png" width="45%" style="display: inline-block;">
+  <br>
+  Models are deployed on iPhone 12 with Core ML Tools to get latency.
+</p>
+
 
 ## Contact
 
@@ -39,7 +46,7 @@ We provide results on all the three datasets: ```CUHK```, ```DUT```, and ```SZU-
 This paper is for you, [Sankar](https://www.linkedin.com/in/ganeshjonna/) for being an enthusiastic contributor, a dedicated researcher, a genuine friend, and most importantly, an amazing human being. Your expertise was essential in developing the code. May you continue to shine wherever you are. Your influence will always be remembered and cherished.
 
 ## Citation
-If you find this repository useful, please consider citing:
+If you find this repo useful, please consider citing:
 ```
 @article{10.1145/3557897,
 author = {Jonna, Sankaraganesh and Medhi, Moushumi and Sahay, Rajiv Ranjan},
@@ -61,4 +68,8 @@ numpages = {26}
 ```
 ## Acknowledgement
 
-We acknowledge [Author/Organization Name] for creating and sharing the datasets.
+We sincerely thank the  owners of the following source code repos: [CUHK](http://shijianping.me/jnb/index.html), [DUT](http://ice.dlut.edu.cn/ZhaoWenda/BTBCRLNet.html), and [SZU-Blur Detection](https://github.com/mathxlsun/BD_EFPN/tree/master/SZU-BD) for sharing the datasets, which are used by our released code.
+
+For the encoder structure of the student network, We utilize the pytorch code: [EfficientNetB3](https://github.com/zhoudaxia233/EfficientUnet-PyTorch/tree/master)
+
+We also thank the anonymous reviewers of ACM TOMM for their helpful feedbacks.
