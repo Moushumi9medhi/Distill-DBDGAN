@@ -17,6 +17,33 @@ Moushumi Medhi,
 We present Distill-DBDGAN, a defocus blur detection model, that segment the blurred regions from a given image affected by defocus
 blur in resource-constraint devices. Its core principle is to leverage knowledge distillation by transferring information from the larger teacher network to a compact student network for mobile applicability. All the networks are adversarially trained in an end-to-end manner.
 
+<p align="center">
+  <img src="assets/mob1.jpg" width="22%" style="display: inline-block;">
+  <img src="assets/mob2.jpg" width="22%" style="display: inline-block;">
+  <img src="assets/mob3.jpg" width="22%" style="display: inline-block;">
+  <img src="assets/mob4.jpg" width="22%" style="display: inline-block;">
+  <br>
+  <span>We captured these images using a smartphone camera</span>
+</p>
+<p align="center">
+  <img src="assets/T_mob1.jpg" width="22%" style="display: inline-block;">
+  <img src="assets/T_mob2.jpg" width="22%" style="display: inline-block;">
+  <img src="assets/T_mob3.jpg" width="22%" style="display: inline-block;">
+  <img src="assets/T_mob4.jpg" width="22%" style="display: inline-block;">
+  <br>
+  <span>Output from our pre-trained Teacher model</span>
+</p>
+<p align="center">
+  <img src="assets/S_mob1.jpg" width="22%" style="display: inline-block;">
+  <img src="assets/S_mob2.jpg" width="22%" style="display: inline-block;">
+  <img src="assets/S_mob3.jpg" width="22%" style="display: inline-block;">
+  <img src="assets/S_mob4.jpg" width="22%" style="display: inline-block;">
+  <br>
+  <span>Output from our pre-trained Student model</span>
+</p>
+
+
+
 
 ## Datasets
 We have evaluated on the publicly available datasets [```CUHK```](http://shijianping.me/jnb/index.html), [```DUT```](http://ice.dlut.edu.cn/ZhaoWenda/BTBCRLNet.html), and [```SZU-Blur Detection```](https://github.com/mathxlsun/BD_EFPN/tree/master/SZU-BD) for evaluation. You can download them from the following:
