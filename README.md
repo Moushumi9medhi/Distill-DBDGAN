@@ -18,7 +18,15 @@ We present Distill-DBDGAN, a defocus blur detection model, that segment the blur
 blur in resource-constraint devices. Its core principle is to leverage knowledge distillation by transferring information from the larger teacher network to a compact student network for mobile applicability. All the networks are adversarially trained in an end-to-end manner.
 
 ## Datasets
-We have included the publicly available datasets [```CUHK```](http://shijianping.me/jnb/index.html), [```DUT```](http://ice.dlut.edu.cn/ZhaoWenda/BTBCRLNet.html), and [```SZU-Blur Detection```](https://github.com/mathxlsun/BD_EFPN/tree/master/SZU-BD) for evaluation. You can find them in the folders [```CUHK_test```], [```DUT_test```], and [```SZU-BD_test```], respectively. If you want to do the inference on your own dataset, you can change the format of your dataset according to the provided dataset. The defocus blur detection masks output by our model are labeled with non-zero values for blur. However, some datasets provide ground truth blur masks where blur is marked as zero. To ensure consistency with our model's output, we need to convert the ground truth masks from these datasets to a uniform format that aligns with our model's format.
+We have evaluated on the publicly available datasets [```CUHK```](http://shijianping.me/jnb/index.html), [```DUT```](http://ice.dlut.edu.cn/ZhaoWenda/BTBCRLNet.html), and [```SZU-Blur Detection```](https://github.com/mathxlsun/BD_EFPN/tree/master/SZU-BD) for evaluation. You can download them from the following:
+
+```CUHK_test``` [dropbox](https://dl.dropboxusercontent.com/scl/fi/k4q30kc6pl6ahs1l10gv9/CUHK_test.zip?rlkey=7be5e6q1iiimu7kyssmn5b94d&st=lcrg2mxt&dl=0)
+
+```DUT_test``` [dropbox](https://dl.dropboxusercontent.com/scl/fi/txz4220t46oszstpdxbp0/DUT_test.zip?rlkey=ksm55vwlxin4jnc7yymzg7d3r&st=5qhmn82o&dl=0)
+
+```SZU-BD_test``` [dropbox](https://dl.dropboxusercontent.com/scl/fi/6klgat0bdflr0dl3okqzs/SZU-BD_test.zip?rlkey=ztfa77kzp1v1mze0iik072a8b&st=iadt0m9d&dl=0)
+
+If you want to do the inference on your own dataset, you can change the format of your dataset according to the provided dataset. The defocus blur detection masks output by our model are labeled with non-zero values for blur. However, some datasets provide ground truth blur masks where blur is marked as zero. To ensure consistency with our model's output, we need to convert the ground truth masks from these datasets to a uniform format that aligns with our model's format.
 
 ## Testing
 
@@ -29,7 +37,7 @@ bash DISTILL_DBD.sh
  ```
 
 ## Results
-We provide results on all the three datasets: ```CUHK```, ```DUT```, and ```SZU-Blur Detection```. The results obtained from our trained models can be directly accessed from ```Results/dataset_name/```;
+We provide results on all the three datasets: ```CUHK```, ```DUT```, and ```SZU-Blur Detection```. The results obtained from our trained models can be directly accessed from [here](https://dl.dropboxusercontent.com/scl/fi/wbb82tc5ejkg0viyw1ywy/Results.zip?rlkey=i2bjqx32d76qg2nrclpdtuc39&st=gaoe72q7&dl=0);
 <p align="center">
   <img src="assets/CUHK_fm_curves.png" width="45%" style="display: inline-block;">
   <img src="assets/CUHK_pr_curves.png" width="45%" style="display: inline-block;">
