@@ -1,0 +1,16 @@
+# Hardware
+seed: 42
+gpus: (1, )
+use_gpu: True
+
+test: 1
+cudnn_deterministic: False
+cudnn_benchmark: False
+num_threads: 1
+test_option: 'DUT'
+batch_size: 1
+shuffle: False
+num_workers: 0
+test_model_path: './trained_model/'
+blurImg_path: './DUT_test//images'
+blurmap_path: './DUT_test//labels'
