@@ -11,9 +11,11 @@ This repository represents the official implementation of the paper titled "Dist
 [![Paper](https://img.shields.io/badge/Paper-PDF-b31b1b)](https://dl.acm.org/doi/pdf/10.1145/3557897)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[Sankaraganesh Jonna](https://www.linkedin.com/in/ganeshjonna/),
-Moushumi Medhi,
+[Sankaraganesh Jonna](https://www.linkedin.com/in/ganeshjonna/)★,
+Moushumi Medhi★,
 [Rajiv Ranjan Sahay](https://www.iitkgp.ac.in/department/EE/faculty/ee-rajiv)
+
+★Equal contribution
 
 We present Distill-DBDGAN, a defocus blur detection model, that segment the blurred regions from a given image affected by defocus
 blur in resource-constraint devices. Its core principle is to leverage knowledge distillation by transferring information from the larger teacher network to a compact student network for mobile applicability. All the networks are adversarially trained in an end-to-end manner.
